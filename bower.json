@@ -1,0 +1,22 @@
+{
+  "name": "online-resume",
+  "description": "part 6 udacity front end developer nanodegree",
+  "main": "index.html",
+  "authors": [
+    "Aaron"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "google-hangout-button": "GoogleWebComponents/google-hangout-button#^1.0.1"
+  }
+}

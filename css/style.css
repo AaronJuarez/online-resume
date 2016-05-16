@@ -1,0 +1,364 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'fontawesome', sans-serif;
+}
+
+html {
+    background: #daede2;
+    padding: 5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: #77c4d3;
+    font-family: "tablet-gothic", verdana, arial, sans-serif;
+    padding-bottom: 3%;
+}
+
+#main {
+    z-index: 2;
+}
+
+div, article, section, header, footer, nav, figure, li {
+    position: relative;
+}
+
+footer {
+    background: rgba(246,247,146,0.9);
+    width: 100%;
+    margin: 0;
+}
+
+.footer-icon {
+    font-size: 1em;
+    display: inline-block;
+    margin: .5em 1em;
+    text-align: center;
+}
+
+.footer-text {
+    display: block;
+    text-align: center;
+}
+
+section.intro {
+    padding: 5%;
+}
+
+h1 {
+    background: #ea2e49;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 6em;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1em;
+    padding: 0.5em 0 0.25em 0;
+}
+
+h2, h3 {
+    font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.black-text {
+    color: #000;
+}
+
+.blue-text {
+    color: #77C4D3;
+}
+
+p, li {
+    padding: 0 0 0.825em 0;
+}
+
+aside.sidebar {
+    background: rgba(246,247,146,0.9);
+    padding: 3%;
+}
+
+.summary {
+    padding-top: 15%;
+}
+
+h1, section.intro div.summary p {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em 0 2em 0;
+}
+
+.flex-item {
+    width: 100%;
+}
+
+.flex-skill-item {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contact-text {
+    padding-left: 5%;
+    width: 80%;
+}
+
+.aaron {
+    display: flex;
+}
+
+#workExperience {
+    background: rgba(255,255,255,0.9);
+    width: 50%;
+    margin-left: -6%;
+    padding-left: 12%;
+    padding-right: 5%;
+}
+
+.module1 {
+    display: flex;
+    padding: 10% 0 0 0;
+}
+
+#projects {
+    width: 50%;
+    padding: 5%;
+}
+
+#education {
+    background: rgba(234,46,73,0.9);
+    width: 50%;
+    padding: 5%;
+}
+
+.module2 {
+    padding: 0;
+    display: flex;
+}
+
+#skillsDiv {
+    background: rgba(255,255,255,0.9);
+    width: 30%;
+    margin: 10% 0 15% 5%;
+    padding: 5%;
+}
+
+#mapDiv {
+    background: rgba(255,255,255,0.9);
+    padding-left: 5%;
+    height: 800px;
+    width: 70%;
+    padding: 5%;
+    min-height: 400px;
+}
+
+#map {
+    display: block;
+    height: 80%;
+    margin: 2% 0 0 0;
+    width: 100%;
+}
+
+.biopic {
+    float: left;
+    margin: 5%;
+    padding: 0;
+    width: 35%;
+    height: 35%;
+    display: none;
+    border-radius: 5%;
+}
+
+img {
+    padding: 10px;
+}
+
+.project-entry {
+    margin: 5% 0 0 0;
+}
+
+.project-entry img {
+    max-width: 100%;
+    width: 60%;
+}
+
+.education-entry {
+    margin: 5%;
+}
+
+.work-entry {
+    margin: 5% 0 0 0;
+}
+
+/* Media queries to handle various device widths */
+
+@media screen and (min-width: 650px) {
+    section.intro {
+        width: 60%;
+    }
+
+    footer {
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    aside.sidebar {
+        position: absolute;
+        right: 0;
+        top: 2.5%;
+        width: 25%;
+        height: 700px;
+    }
+
+    .extra1 {
+        background: rgba(51,55,69,0.9);
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        top: 0;
+        width: 30%;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: 110%;
+    }
+
+    .footer-icon {
+        font-size: 1.5em;
+        display: inline-block;
+        margin: .5em 1em;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 30%;
+        border-radius: 5%;
+    }
+
+    #map {
+        display: block;
+        height: 70%;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 830px) and (min-width: 650px) {
+    .contact-text {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .biopic {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    h2 {
+        font-size: 8em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #workExperience {
+        background: rgba(255,255,255,0.9);
+        width: 90%;
+        margin-left: -6%;
+        margin-right: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .module1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+
+    #projects {
+        width: 100%;
+        padding: 5%;
+        margin: 5%;
+    }
+
+    #education {
+        background: rgba(234,46,73,0.9);
+        width: 100%;
+        padding: 5%;
+        margin: 5%;
+    }
+
+    .module2 {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5%;
+    }
+
+    #skillsDiv {
+        background: rgba(255,255,255,0.9);
+        width: 100%;
+        margin: 5%;
+        padding: 5%;
+    }
+
+    #mapDiv {
+        background: rgba(255,255,255,0.9);
+        height: 500px;
+        width: 100%;
+        margin: 5%;
+        padding: 5%;
+    }
+}
