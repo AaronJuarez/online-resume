@@ -15,19 +15,30 @@ replace the %data% placeholder text you see in them.
 var HTMLheaderName = '<div class="aaron"><h2>%data%</h2></div>';
 var HTMLheaderRole = '<h1>%data%</h1>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="contact-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="fontawesome-phone"></span><span class="contact-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="fontawesome-envelope-alt"></span><span class="contact-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="contact-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="fontawesome-github-alt"></span><span class="contact-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="contact-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="fontawesome-map-marker"></span><span class="contact-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">' +
+                         '%contact%</span><span class="contact-text">%data%' +
+                         '</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="fontawesome-phone">' +
+                 '</span><span class="contact-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="fontawesome-envelope-alt">'+
+                '</span><span class="contact-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter' +
+                  '</span><span class="contact-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="fontawesome-github-alt">' +
+                 '</span><span class="contact-text">%data%</span></li>';
+var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span>' +
+               '<span class="contact-text">%data%</span></li>';
+var HTMLlocation = '<li class="flex-item"><span class="fontawesome-map-' +
+                   'marker"></span><span class="contact-text">%data%</span>' +
+                   '</li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic" />';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance</h3><ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-skill-item"><span class="contact-text">%data%</span></li>';
+var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance</h3><ul ' +
+                      'id="skills" class="flex-box"></ul>';
+var HTMLskills = '<li class="flex-skill-item"><span class="contact-text">' +
+                 '%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
@@ -43,7 +54,7 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
+var HTMLschoolName = '<a href="#" target="_blank">%data%';
 var HTMLschoolDegree = ' - %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
@@ -51,13 +62,27 @@ var HTMLschoolMajor = '<em>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = ' - %data%</a>';
-var HTMLonlineSchool = '<a href="#">%data%';
+var HTMLonlineSchool = '<a href="#" target="_blank">%data%';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineURL = '<br><a href="#" target="_blank">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
+var contactLinkMail = '<a href="mailto:%data%?Subject=Hello%20%name%" ' +
+                      'target="_top" class="fontawesome-envelope-alt ' +
+                      'footer-icon"></a>';
+var contactLinkFacebook = '<a href="%data%" target="_blank" ' +
+                          'class="fontawesome-facebook-sign footer-icon"></a>';
+var contactLinkLinkedin = '<a href="%data%" target="_blank" ' +
+                          'class="fontawesome-linkedin-sign footer-icon"></a>';
+var contactLinkGithub = '<a href="https://github.com/%data%" target="_blank" ' +
+                        'class="fontawesome-github footer-icon"></a>';
+var footerLocation = '<div class="footer-icon"><a href="https://www.google.' +
+                'com.mx/maps/place/Mexico+City,+Federal+District/@19.3876888,' +
+                '-99.2108461,10.95z/data=!4m5!3m4!1s0x85ce0026db097507:0x5406' +
+                '1076265ee841!8m2!3d19.4326077!4d-99.133208" target="_blank">' +
+                '<span class="fontawesome-map-marker"> %data%</span></a></div>';
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.

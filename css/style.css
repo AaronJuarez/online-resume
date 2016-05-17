@@ -87,7 +87,7 @@ h2, h3 {
     font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
 }
 
-p {
+p, .welcome-message {
     text-align: justify;
 }
 
@@ -103,7 +103,7 @@ p {
     color: #77C4D3;
 }
 
-p, li {
+p, li, .welcome-message {
     padding: 0 0 0.825em 0;
 }
 
@@ -116,7 +116,7 @@ aside.sidebar {
     padding-top: 15%;
 }
 
-h1, section.intro div.summary p {
+h1, .welcome-message {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -127,7 +127,7 @@ h1, section.intro div.summary p {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    padding: 0.5em 0 2em 0;
+    padding: 0.5em 0 2em;
 }
 
 .flex-item {
@@ -224,6 +224,7 @@ img {
 .project-entry img {
     max-width: 100%;
     width: 60%;
+    margin-left: 20%;
 }
 
 .education-entry {
@@ -262,20 +263,13 @@ img {
         top: 0;
         width: 30%;
         z-index: 1;
-    }
+    };
 }
 
 @media only screen and (min-width: 900px) {
     body {
         font-size: 110%;
-    }
-
-    .footer-icon {
-        font-size: 1.5em;
-        display: inline-block;
-        margin: .5em 1em;
-        text-align: center;
-    }
+    };
 }
 
 @media only screen and (max-width:900px) {
@@ -290,24 +284,36 @@ img {
         margin: 0;
         width: 100%;
     }
+
+    .project-entry img {
+        width: 80%;
+        margin-left: 10%;
+    };
 }
 
 @media only screen and (max-width: 830px) and (min-width: 650px) {
     .contact-text {
         font-size: 75%;
-    }
+    };
 }
 
 @media only screen and (min-width: 750px) {
     .biopic {
         display: block;
-    }
+    };
 }
 
 @media only screen and (min-width: 1050px) {
     h2 {
         font-size: 8em;
     }
+
+    .footer-icon {
+        font-size: 1.5em;
+        display: inline-block;
+        margin: .5em 1em;
+        text-align: center;
+    };
 }
 
 @media only screen and (max-width: 650px) {
@@ -361,4 +367,9 @@ img {
         margin: 5%;
         padding: 5%;
     }
+
+    .project-entry img {
+        width: 100%;
+        margin: 0;
+    };
 }
