@@ -8,8 +8,7 @@
  		"github" : "AaronJuarez",
  		"twitter" : "@john doe",
  		"facebook" : "https://www.facebook.com/aaron.juarez.52",
- 		"linkedin" : "https://www.linkedin.com/in/aar%C3%B3n-ju%C3%A1rez-" +
- 					 "0836ab94?trk=nav_responsive_tab_profile",
+ 		"linkedin" : "https://www.linkedin.com/in/aaron-juarez",
  		"location" : "Mexico City, Mexico"
  	},
  	"welcomeMessage" : "I have two years of experience as a web developer " +
@@ -153,8 +152,6 @@ bio.display = function() {
 	 var formattedLinkGithub = contactLinkGithub.replace("%data%", bio.contacts.github);
 	 $("footer").append(formattedLinkGithub);
 
-	 var formattedfooterLocation = footerLocation.replace("%data%", bio.contacts.location);
-	 $("footer").append(formattedfooterLocation);
 };
 
 
